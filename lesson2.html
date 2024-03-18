@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>คอมพิวเตอร์และการบำรุงรักษา</title>
+    <link rel="stylesheet"  href="style2.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+
+        <span></span>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html" class="active">lesson</a></li>
+            <li><a href="page3.html">Test</a></li>
+            <li><a href="page4.html">Contact</a></li>
+            
+        </ul>
+        
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+   
+    <script type="text/javascript" src="script.js">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    
+
+    </script>
+
+<section class="sub-header1">
+    <h1>หน่วยที่ 2</h1>
+    <p>การแก้ไขปัญหาด้วยโปรแกรมUtility หรือโปรแกรมอรรถประโยชน์</p>
+</section>
+<section class="container">
+    <div class="container-content">
+        <p>
+        <strong>ความหมายโปรแกรมยูทิลิตี้</strong>
+        </p>
+        <p>โปรแกรม หมายถึงโปรแกรมที่ช่วยจัดการระบบทางด้านต่าง ๆ รวมไปถึงดูแลรักษาและซ่อมบำรุงคอมพิวเตอร์ และช่วยเพิ่มประสิทธิภาพการทำงานของเครื่องคอมพิวเตอร์ซึ่งในระบบปฏิบัติการวินโดว์ส 98 ได้มีการพัฒนาเครื่องมือต่าง ๆ เพิ่มขึ้นเพื่อใช้สำหรับดูแลรักษาระบบและเพิ่มประสิทธิภาพในการทำงานเครื่องคอมพิวเตอร์ อีกทั้งทำการซ่อมแซมบำรุงรักษาให้คอมพิวเตอร์ ตลอดจนถึงข้อแนะนำและแนวทางแก้ปัญหาที่อาจจะเกิดขึ้นกับระบบปฏิบัติการวินโดวส์ โดยเครื่องมือเหล่านี้ถูกตั้งอยู่ในกลุ่มของคำสั่ง System Tools ใน Accessory</p>
+
+<!------ duty ------>
+
+<section class="duty">
+
+    <div class="row">
+        <div class="duty-col">
+            <h1> ตัวอย่างโปรแกรมยูทิลิตี้</h1>
+            <p>ชนิดของโปรแกรมยูทิลิตี้มีหน้าที่ต่างกันและมีผลิตภัณฑ์ยี่ห้อรุ่นต่างกันมากมาย ในหัวข้อนี้จะกล่าวถึงตัวอย่างหน้าที่และผลิตภัณฑ์ตัวอย่างของโปรแกรมยูทิลิตี้ที่มีใช้กันอยู่มากและเป็นประโยชน์ต่อการใช้งานฟอร์แมตเตอร์ – Formatter โปรแกรมฟอร์แมตเตอร์เป็นโปรแกรมสำหรับการเตรียมรูปแบบการบันทึกข้อมูลบนดิสก์ เนื่องจากดิสก์เป็นอุปกรณ์บันทึกข้อมูลที่ใช้ได้กับคอมพิวเตอร์หลากหลายรุ่นและระบบปฏิบัติการไม่เฉพาะเจาะจง ก่อนที่จะใช้ดิสก์เป็นข้อมูลสำหรับระบบปฏิบัติการแบบใดจำเป็นต้องจัดรูปแบบการการจัดเก็บข้อมูลไฟล์และโครงสร้างที่เกี่ยวกับการจัดเก็บไฟล์และแบ่งไดเร็กทอรี่หรือโฟลเดอร์ตามรูปแบบที่ระบบปฏิบัติการนั้นกำหนด การจัดรูปแบบที่เรียกว่าดิสก์ฟอร์แม็ต จะต้องทำกับทั้งฮาร์ดิสก์และฟล๊อปปี้ดิสก์ก่อนที่จะใช้ดิสก์นั้นเก็บข้อมูลครั้งแรก ซึ่งระบบปฏิบัติการทุกระบบจะเตรียมโปรแกรมยูทิลิตี้เพื่อให้ผู้ใช้สามารถจัดฟอร์แม็ตดิสก์ใหม่ เช่น ในเอ็มเอสดอส ใช้คำสั่ง FORMAT.COM ในวินโดว์ก็มีคำสั่ง Format ในกลุ่มเมนู File เมื่อเราเลือกไอคอนแสดงดิสก์ ในระบบคอมพิวเตอร์ใหญ่คำสั่งในการจัดฟอร์แม็ตจะไม่อนุญาตให้ผู้ใช้งานได้ใช้คำสั่งเช่นนี้กับฮาร์ดดิสก์ของระบบ ผู้ที่สามารถใช้คำสั่งนี้ได้จะเป็นผู้ดูแลระบบเท่านั้นและอาจจะต้องเข้าสู่โหมดในการจัดการระบบก่อนที่จะทำการฟอร์แม็ตได้ เนื่องจากการฟอร์แม็ตดิสก์ใหม่จะทำให้โปรแกรม และข้อมูลที่ถูกติดตั้งและบันทึกอยู่ถูกลบล้างหายไปทั้งหมด จึงเป็นคำสั่งที่จะต้องใช้ด้วยความระมัดระวัง แม้แต่ในเครื่องพีซีที่ใช้งานส่วนบุคคลก็จะต้องระวังไม่ให้ใช้</p>
+        </div>        
+    </div>
+</section>
+
+<!------ container-duty ------>
+
+
+<section class="container-duty">
+    <div class="containerduty-text">
+        <h2>โปรแกรมช่วยค้นหาไฟล์ข้อมูล – Find File </h2>
+        <p>การเก็บข้อมูลไฟล์ในระบบที่มีหน่วยบันทึกข้อมูลความจุสูงที่ใช้กันทุกวันนี้มีความสามารถเก็บข้อมูลได้นับหมื่นไฟล์ การเก็บข้อมูลมีการแบ่งโครงสร้างเป็นโฟลเดอร์ที่สามารถแตกออกไปได้หลายชั้น ด้วยจำนวนไฟล์ที่มีมาก และสามารถจัดแบ่งโฟลเดอร์ที่เก็บข้อมูลย่อย บางครั้งเป็นการยากที่จะค้นหาไฟล์ข้อมูลที่ต้องการนำมาใช้งานว่ามีอยู่หรือไม่และจัดเก็บไว้ในตำแหน่งใด โปรแกรมค้นหาไฟล์ข้อมูลเป็นยูทิลิตี้ที่จะช่วยให้ผู้ใช้สามารถค้นหาได้ว่ามีไฟล์ที่ต้องการเก็บอยู่หรือไม่และหากมีไฟล์นั้นอยู่ที่ตำแหน่งใด โดยระบุเงื่อนไขของไฟล์ที่ต้องการได้หลายเงื่อนไข เช่นกำหนดชื่อไฟล์หรือระบุเฉพาะบางส่วนของชื่อไฟล์ ชนิดของข้อมูลที่บรรจุอยู่ในไฟล์ ช่วงวันที่ที่เปลี่ยนแปลงข้อมูลล่าสุด หรือระบุข้อมูลหรือข้อความที่อยู่ในไฟล์นั้นตัวอย่างเช่น คำสั่ง FINDFILE ในโนเวลล์เน็ตแวร์ คำสั่ง Find Files or Folders ของวินโดว์ 98 เป็นต้น</p>
+    </div>
+</section>
+<section class="container-duty">
+    <div class="containerduty-text">
+        <h2>โปรแกรมช่วยลดขนาดไฟล์ในการจัดเก็บบันทึกให้เล็กลง - File Compression  </h2>
+        <p>การจัดเก็บไฟล์ข้อมูลที่จะฝากเก็บไว้โดยยังไม่ได้ใช้งานสามารถบีบขนาดไฟล์ให้เล็กลงได้โดยใช้กระบวนการบีบอัดข้อมูลที่เรียกว่าดาต้าคอมเพรสชั่น (Data compression) ซึ่งขนาดอาจลดลงได้มากถึง 90% ใช้พื้นที่เก็บข้อมูลเพียง 10% ของขนาดข้อมูลจริง ขึ้นอยู่กับว่าข้อมูลนั้นมีความซ้ำกันเพียงใดหากซ้ำกันมากก็สามารถลดขนาดได้มาก ข้อมูลที่ถูกลดขนาดลงไม่สามารถนำมาใช้งานได้ทันที หากต้องการนำกลับมาใช้งานจะต้องขยายขนาดข้อมูลกลับมาเท่าเดิมโดยใช้โปรแกรมขยายขนาดกลับมาเรียกว่าดีคอมเพรสชั่น (Decompression) ซึ่งโปรแกรมยูทิลิตี้ที่ช่วยในการลดขนาดข้อมูล จะมีคำสั่งสำหรับขยายขนาดข้อมูลกลับมาเป็นข้อมูลเท่าเดิม นอกจากนี้ยังสามารถบีบอัดและรวมข้อมูลหรือโปรแกรมจากหลาย ๆ ไฟล์เข้ามารวมไว้ในไฟล์เดียวกันเพื่อทำให้สะดวกในการคัดลอกหรือโอนถ่ายข้อมูลและโปรแกรมระหว่างเครื่องคอมพิวเตอร์ ตัวอย่างโปรแกรมยูทิลิตี้สำหรับบีบอัดและขยายข้อมูลที่ถูกใช้งานกันมาก ได้แก่ PKZIP.EXE และ PKUNZIP.EXE เป็นโปรแกรมบีบอัดและขยายที่ทำงานบนเอ็มเอสดอส โปรแกรม WinZip ทำงานบนวินโดว์ โปรแกรม WinRAR เป็นต้น</p>
+    </div>
+</section>
+<section class="container-duty">
+    <div class="containerduty-text">
+        <h2> โปรแกรมช่วยคืนไฟล์ที่ถูกลบไปแล้ว – File Undelete  </h2>
+        <p>ไฟล์ข้อมูลที่ถูกลบออกแล้วหากยังไม่มีการบันทึกข้อมูลใหม่ทับลงไปยังสามารถเรียกไฟล์เหล่านั้นกลับคืนมาได้ ซึ่งระบบปฏิบัติการในยุคปัจจุบันจะไม่บันทึกข้อมูลใหม่ทับตำแหน่งข้อมูลที่ถูกลบเว้นแต่จะไม่มีพื้นที่บันทึกข้อมูลว่างแล้ว หรือในระบบปฏิบัติการอาจมีวิธีนำข้อมูลที่ถูกลบไปเก็บไว้ในตำแหน่งที่เตรียมไว้ก่อนซึ่งการเรียกข้อมูลที่ถูกลบทิ้งจะมีคำสั่งหรือโปรแกรมยูทิลิตี้ช่วยดำเนินการ แต่ในระบบปฏิบัติการเช่นวินโดว์ 95/98 ได้รวมคำสั่งคืน</p>
+    </div>
+</section>
+<section class="container-duty">
+    <div class="containerduty-text">
+        <h2>โปรแกรมช่วยทำข้อมูลสำรองและนำคืนข้อมูลสำรอง - Backup and Recovery  </h2>
+        <p>โปรแกรมยูทิลิตี้ประเภทนี้จะทำการคัดลอกไฟล์ข้อมูลเก็บลงในสื่อ เช่นฟลอปปี้ดิสก์ เพื่อใช้เป็นสื่อข้อมูลสำรองที่สามารถนำข้อมูลกลับคืนมาติดตั้งใหม่หากข้อมูลในหน่วยบันทึกข้อมูลเกิดเสียหายหรือสูญหายไป โปรแกรมสำรองข้อมูลบางโปรแกรมจะบันทึกข้อมูลสำรองแยกเป็นไฟล์ แต่บางโปรแกรมจะรวมข้อมูลที่สำคัญของดิสก์และระบบปฏิบัติการเป็นร่วมกันโดยไม่ได้คำนึงว่าไฟล์ใดบ้างและเก็บร่วมเป็นไฟล์เดียวกัน เรียกว่าดิสก์อิมเมจ (Disk Image) หากหน่วยบันทึกข้อมูลเสียไปก็สามารถถ่ายข้อมูลดิสก์อิมเมจที่สำรองไว้กลับลงมาได้เหมือนสภาพเดิมทันที ตัวอย่างเช่น โปรแกรม Backup ของเอ็มเอสดอส และวินโดว์ 95 หรือ 98 โปรแกรมNorton Backup และ Colorado Backup เป็นต้น</p>
+    </div>
+</section>
+<section class="container-duty">
+    <div class="containerduty-text">
+        <h2>โปรแกรมช่วยซ่อมไฟล์ข้อมูลหรือพื้นที่ในการเก็บข้อมูลในดิสก์ - File and disk repair </h2>
+        <p>เมื่อเกิดปัญหาข้อมูลที่ถูกบันทึกในดิสก์เสียหาย หรือระบบการจัดเก็บไฟล์มีบางส่วนเกิดเสียหาย ทำงานไม่ปกติ โปรแกรมยูทิลิตี้ด้านการตรวจสอบแก้ไขระบบไฟล์อาจถูกนำมาใช้เพื่อตรวจสอบและแก้ไขปัญหาด้านนี้ ซึ่งการทำงานของโปรแกรมประเภทนี้คือจะอ่านแต่ละส่วนของระบบการจัดเก็บไฟล์ที่เรียกว่าไฟล์ซิสเต็ม (File System) เช่น ส่วนจัดเก็บชื่อไฟล์ ส่วนเชื่อมโยงไปยังเนื้อไฟล์ โครงสร้างการแบ่งไดเร็กทอรี่ และการจัดเก็บเนื้อที่ว่างบนดิสก์ หากพบว่ามีส่วนใดผิดปกติไม่ถูกต้อง จะแสดงรายการข้อผิดพลาดและถามให้ผู้ใช้เลือกว่าจะแก้ไขหรือไม่ ตัวอย่างเช่น Scandisk ที่ทำงานบนเอ็มเอสดอส , Norton disk doctor ในวินโดว์ 95 / 98 เป็นต้น</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container10">
+        <div class="sec About">
+            <h2>About Us</h2>
+            <p>เว็บไซต์นี้จัดทำขึ้นโดยนักเรียนจากวิทยาลัยเทคนิคสมุทรปราการ สาขาคอมพิวเตอร์ธุรกิจระดับประกาศนียบัตรวิชาชีพ(ปวช.)ในรายวิชาโครงงาน สื่อการเรียนการสอนนี้จัดทำขึ้นในหัวข้อคอมพิวเตอร์และการบำรุงรักษา โดยรวบรวมเนื้อหาและบททดสอบในแต่ละหน่วยเพื่อวัดประสิทธิภาพการเรียน คณะผู้จัดทำหวังอย่างยิ่งว่าเว็บไซต์นี้จะมีประโยชน์ต่อผู้ใช้เป็นอย่างยิ่ง
+            </p>
+        </div>
+        <div class="sec Pre-Test">
+            <h2>Pre-Test</h2>
+            <ul class="info">
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFEBnWSuWZSRdeDbygaPgqjZhZDhkOcnW2AOpjcTF1cINdTg/viewform">ทดสอบก่อนเรียนหน่วยที่ 1</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScngOJPFvrPj8AQylS7wn5TU8NCRlR0hn5ZtAb8GbZp2DuqUg/viewform">ทดสอบก่อนเรียนหน่วยที่ 2</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdp2fF6inJOI3qp4h_DbP-jywiva63zIBBKV4sFU9bQzxOMkw/viewform">ทดสอบก่อนเรียนหน่วยที่ 3</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfviuPCcS2qdWYsOIHVmJo2KlkLmQbWefhcwPac8kECxZs-ag/viewform">ทดสอบก่อนเรียนหน่วยที่ 4</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfDyLnTyWgFUypdufN4zh2W4wIuL514ZroSFroBs9lKR8bV1w/viewform">ทดสอบก่อนเรียนหน่วยที่ 5</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd4UdReYkgVshpKlzmvKJROU2E4TAb_J04vAOK3zy94sHZffw/viewform">ทดสอบก่อนเรียนหน่วยที่ 6</a></li>
+            </ul>
+        </div>
+        <div class="sec Post-Test">
+            <h2>Post-Test</h2>
+            <ul class="info">
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScMhx7E5Du9Gkrxmay1_5oeFNvOVNi3Axsvl-ykua29Mmkthg/viewform">ทดสอบหลังเรียนหน่วยที่ 1</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdy1gEU5rcM8QTOclDuI5Quu95SpS6R0QIAvORkUmgg5oLU7g/viewform">ทดสอบหลังเรียนหน่วยที่ 2</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdT3M1rPgRML5G5kt-w377Rg214y3npTqXvB48qsw3IJ5MenQ/viewform">ทดสอบหลังเรียนหน่วยที่ 3</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSewWfMjbXy1nIzRmUW9auaBE2GIRdxgtwACc8LNWrF17jqMbA/viewform">ทดสอบหลังเรียนหน่วยที่ 4</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdQs7cmt6VjGi6k_66R0IDCaRDJjLA8SWPPOqtgYt1-1ivjAg/viewform">ทดสอบหลังเรียนหน่วยที่ 5</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSep8O2KZLsfI2WLoS76WmAu0olLa1zlXLnoL1BdScrilGY4rg/viewform">ทดสอบหลังเรียนหน่วยที่ 6</a></li>
+            </ul>
+        </div>
+        <div class="sec contact">
+            <h2>Contact Us</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span><p><a href="tel:02 323 9009">02 323 9009</a></p>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span><p><a href="mailto:mail@sptc.ac.th">mail@sptc.ac.th</a></p>
+                    <span><i class="fa fa-facebook-official" aria-hidden="true"></i></span><p><a href="https://web.facebook.com/information.sptc/?_rdc=1&_rdr">เพจงานประชาสัมพันธ์วิทยาลัยเทคนิคสมุทรปราการ</a></p>
+                    <span><i class="fa fa-google" aria-hidden="true"></i></span><p><a href="https://www.sptc.ac.th/wordpress/">www.sptc.ac.th</a></p>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</head>
+</html>

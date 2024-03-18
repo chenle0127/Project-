@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --bg-color: #fff;
+    --text-color: #000;
+    --main-color:  #E4A5FF;
+}
+body{
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+    background: #fff;
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+.navbar {
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+    
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.navbar a.active{
+    color: var(--main-color);
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.50s ease;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 7px;
+}
+.main a:hover{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+
+@media (max-width: 1280px){
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 29vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all 0.5s ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all o.50s ease;
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+        transform: translateY(5px);
+    }
+    .navbar a.active{
+        color: var(--text-color); 
+    }
+    .navbar.open{
+        right: 2%;
+    }
+}
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/lesson_6.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #E4A5FF;
+}
+.sub-header h1{
+    font-size: 36px;
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 150px;
+    text-align: center;
+}
+.sub-header p{
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 300;
+}
+
+
+.container{
+    padding: 5rem;
+    margin: 5px;
+    padding-bottom: 1rem;
+}
+.container-content strong {
+    max-width: 960px;
+    color: #000;
+    margin: 0 auto;
+}
+.container-content p {
+    font-weight: 300;
+    line-height: 2rem;
+    padding: 5px 7px 7px;
+    margin: 1rem;
+    color: #777;
+    font-size: 14px;
+}
+
+.container1{
+    padding: 13rem;
+    padding-top: 2rem;
+    margin: 5px;
+    padding-bottom: 1rem;
+}
+.container1-col{
+    padding: 4rem;
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 1px;;
+}
+.container1-col img{
+    display: flex;
+    justify-content: center;
+    max-width: 960px;
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+}
+.container-text h2{
+    margin-top: 50px;
+}
+.container-text p{
+    margin-top: 20px;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 10px;
+    color: #777;
+    line-height: 2rem;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #E4A5FF;
+    margin-top: 75px;
+}
+footer .container10{
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+footer .container10 .sec h2{
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #000;
+}
+footer .container10 .contact .info{
+    position: relative;
+}
+footer .container10 .contact .info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+footer .container10 .contact .info span{
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .container10 .About p{
+    margin-right: 30px;
+    font-weight: 500px;
+    font-size: 15px;
+    color: #fff;
+    line-height: 30px;
+}
+footer .container10 .contact .info li a{
+    line-height: 35px;
+    color: #fff;
+}
+footer .container10 .contact .info li  a:hover{
+    color: #000;
+    transition: 0.60s;
+}
+footer .container10 .Pre-Test li a{ 
+    line-height: 30px;
+    color: #fff;
+}
+footer .container10 .Pre-Test li  a:hover{
+    color: #000;
+    transition: 0.60s;
+}
+footer .container10 .Post-Test li a{
+    line-height: 30px;
+    color: #fff;
+}
+footer .container10 .Post-Test li  a:hover{
+    color: #000;
+    transition: 0.60s;
+}
+@media (max-width: 991px){
+    footer{
+      padding: 40px;  
+    }
+    footer .container10{
+        width: 100%;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
